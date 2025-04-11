@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ゲームダウンロードページ</title>
+  <title>Tariff Defense ダウンロードページ</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    h1 { color: #444; }
+    .store-links a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+      color: #0066cc;
+    }
+  </style>
   <script>
-    // ユーザーエージェントでOS判別
     const ua = navigator.userAgent.toLowerCase();
 
     if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1) {
-      // iOS端末 → App Storeへ（仮URL）
-      window.location.href = "https://example.com/ios";
+      window.location.href = "https://example.com/ios"; // iOSの本番URLに変更
     } else if (ua.indexOf("android") > -1) {
-      // Android端末 → Google Playへ（仮URL）
-      window.location.href = "https://example.com/android";
+      window.location.href = "https://example.com/android"; // Androidの本番URLに変更
     }
+    // その他（PC等）はLPとして下のHTMLを表示
   </script>
 </head>
-
 <body>
-  <p>お使いのデバイスに合わせてストアに移動します...</p>
-</body>
+  <h1>🌟 Tariff Defense へようこそ！</h1>
+  <p>このゲームはスマートフォン専用です。以下のストアからダウンロードしてください：</p>
 
+  <div class="store-links">
+    <a href="https://example.com/ios">📱 iOS版はこちら（App Store）</a>
+    <a href="https://example.com/android">🤖 Android版はこちら（Google Play）</a>
+  </div>
+
+  <p>アプリの詳細や最新情報は公式SNSでお知らせしています。</p>
+  <p>お問い合わせ：example@gmail.com</p>
+</body>
 </html>

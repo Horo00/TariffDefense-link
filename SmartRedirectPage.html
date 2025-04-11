@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゲームダウンロードページ</title>
+  <script>
+    // ユーザーエージェントでOS判別
+    const ua = navigator.userAgent.toLowerCase();
+
+    if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1) {
+      // iOS端末 → App Storeへ（仮URL）
+      window.location.href = "https://example.com/ios";
+    } else if (ua.indexOf("android") > -1) {
+      // Android端末 → Google Playへ（仮URL）
+      window.location.href = "https://example.com/android";
+    }
+  </script>
+</head>
+<body>
+  <p>お使いのデバイスに合わせてストアに移動します...</p>
+</body>
+</html>
